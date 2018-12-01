@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="me.aussiedean.plugin.Events.EventsClass"/>
+<fullyQualifiedTypeName name="org.bukkit.event.player.PlayerMoveEvent"/>
+<fullyQualifiedTypeName name="org.bukkit.inventory.Inventory"/>
+<fullyQualifiedTypeName name="org.bukkit.event.block.Action"/>
+<fullyQualifiedTypeName name="org.bukkit.block.Block"/>
+<fullyQualifiedTypeName name="org.bukkit.event.block.BlockBreakEvent"/>
+<fullyQualifiedTypeName name="org.bukkit.Location"/>
+<fullyQualifiedTypeName name="org.bukkit.event.block.BlockPlaceEvent"/>
+<fullyQualifiedTypeName name="me.aussiedean.plugin.Plugin"/>
+<fullyQualifiedTypeName name="net.minecraft.server.v1_12_R1.Material"/>
+<fullyQualifiedTypeName name="org.bukkit.entity.Player"/>
+<fullyQualifiedTypeName name="org.bukkit.Material"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.bukkit.event.player.PlayerInteractEvent"/>
+<fullyQualifiedTypeName name="CustomItems.CustomItems"/>
+<fullyQualifiedTypeName name="org.bukkit.inventory.ItemFlag"/>
+<fullyQualifiedTypeName name="org.bukkit.event.EventHandler"/>
+<fullyQualifiedTypeName name="net.minecraft.server.v1_12_R1.CommandExecute"/>
+<fullyQualifiedTypeName name="org.bukkit.inventory.ItemStack"/>
+<fullyQualifiedTypeName name="org.bukkit.inventory.meta.ItemMeta"/>
+<fullyQualifiedTypeName name="org.bukkit.ChatColor"/>
+<fullyQualifiedTypeName name="org.bukkit.event.Listener"/>
+<fullyQualifiedTypeName name="org.bukkit.plugin.Plugin"/>
+<fullyQualifiedTypeName name="me.aussiedean.magicalitems.Main"/>
+<fullyQualifiedTypeName name="org.bukkit.inventory.ShapedRecipe"/>
+<fullyQualifiedTypeName name="MagicalItems.MagicalItems"/>
+<fullyQualifiedTypeName name="org.bukkit.inventory.ShapelessRecipe"/>
+<fullyQualifiedTypeName name="org.bukkit.NamespacedKey"/>
+</qualifiedTypeNameHistroy>

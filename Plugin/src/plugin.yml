@@ -1,0 +1,13 @@
+name: Plugin
+main: me.aussiedean.plugin.Plugin
+version: 1.0
+description: xd
+
+
+commands:
+    giveitem:
+        usage: /<command>
+        description: Give Command
+    inventory:
+        usage: /<command>
+        description: Opens A Custom Inventory

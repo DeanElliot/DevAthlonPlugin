@@ -1,0 +1,45 @@
+package CustomItems;
+
+import java.util.ArrayList;
+
+import org.bukkit.ChatColor;
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.event.Listener;
+import org.bukkit.inventory.ItemFlag;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.ShapedRecipe;
+import org.bukkit.inventory.meta.ItemMeta;
+
+import me.aussiedean.plugin.Plugin;
+
+public class CustomItems implements Listener {
+	public static ItemStack item = new ItemStack(Material.DIAMOND_AXE);
+	private static ItemMeta meta = item.getItemMeta();
+	
+	private Plugin plugin = Plugin.getPlugin(Plugin.class);
+	public static void giveItems(Player player) {
+		meta.setDisplayName(ChatColor.AQUA + "AXE OF THOR");
+		ArrayList<String> lore = new ArrayList<String>();
+		lore.add(ChatColor.WHITE + "The most powerful weapon in the universe");
+		meta.setLore(lore);
+		item.setItemMeta(meta);
+		meta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
+		
+		player.getInventory().addItem(item);	
+		}
+	
+	public void customRecipe() {
+		
+		ShapedRecipe ta = new ShapedRecipe(item);
+		
+		ta.shape("## ","#$ "," $ ");
+		ta.setIngredient('#', Material.DIAMOND_BLOCK);
+		ta.setIngredient('%', Material.STICK);
+		
+		plugin.getServer().addRecipe(ta);
+		
+	}
+	}
+
+

@@ -1,0 +1,29 @@
+package me.aussiedean.plugin.Events;
+
+import org.bukkit.ChatColor;
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerMoveEvent;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
+
+public class EventsClass implements Listener {
+	@EventHandler
+	public void onMove (PlayerMoveEvent event) {
+		
+		Player player = event.getPlayer();
+		Inventory pInven = player.getInventory();
+		ItemStack item = new ItemStack(Material.GOLDEN_APPLE, 1);
+		
+		if (player.isOnGround()) {
+			player.sendMessage(ChatColor.DARK_GREEN + "You moved!");
+			pInven.addItem(item);
+		}
+		if (!player.isOnGround()) {
+			player.sendMessage(ChatColor.BLUE + "You are airborne!");
+		}
+	}
+
+}

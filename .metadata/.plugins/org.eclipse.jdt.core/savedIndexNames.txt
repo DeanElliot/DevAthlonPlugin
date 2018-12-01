@@ -1,0 +1,3 @@
+INDEX VERSION 1.130+C:\Users\Rasmu\Desktop\Plugins\.metadata\.plugins\org.eclipse.jdt.core
+639229884.index
+367415667.index

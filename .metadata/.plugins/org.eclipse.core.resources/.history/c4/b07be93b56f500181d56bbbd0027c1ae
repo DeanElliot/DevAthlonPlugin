@@ -1,0 +1,58 @@
+package MagicalItems;
+
+import java.util.ArrayList;
+
+import org.bukkit.ChatColor;
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.event.Listener;
+import org.bukkit.inventory.ItemFlag;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.ShapedRecipe;
+import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.plugin.Plugin;
+
+import me.aussiedean.magicalitems.Main;
+
+public class MagicalItems implements Listener {
+	
+	public static ItemStack item = new ItemStack(Material.TOTEM);
+	private static ItemMeta meta = item.getItemMeta();
+	
+	
+	
+
+	private Plugin plugin = Main.getPlugin(Main.class);
+	public static void giveItems(Player player) {
+		meta.setDisplayName(ChatColor.AQUA + "Resurrection Stone");
+		ArrayList<String> lore = new ArrayList<String>();
+		lore.add(ChatColor.WHITE + "Can ressurect you when you die, once");
+		meta.setLore(lore);
+		item.setItemMeta(meta);
+		meta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
+		
+		player.getInventory().addItem(item);
+		
+		
+		}
+	
+
+	public void customRecipe() {
+
+		@SuppressWarnings("deprecation")
+		ShapedRecipe rezstone = new ShapedRecipe(item);
+		
+	    rezstone.shape("#!¤", "%&/", "2£$");
+	    rezstone.setIngredient('#', Material.GOLD_BLOCK);
+	    rezstone.setIngredient('!', Material.DIAMOND_BLOCK);
+	    rezstone.setIngredient('¤', Material.EMERALD_BLOCK);
+	    rezstone.setIngredient('%', Material.IRON_BLOCK );
+	    rezstone.setIngredient('&', Material.FIREBALL );
+	    rezstone.setIngredient('/', Material.STONE );
+	    rezstone.setIngredient('2', Material.END_ROD );
+	    rezstone.setIngredient('£', Material.ENDER_STONE );
+	    rezstone.setIngredient('$', Material.ENDER_PEARL );
+	    
+	    plugin.getServer().addRecipe(rezstone);
+	}
+	}
