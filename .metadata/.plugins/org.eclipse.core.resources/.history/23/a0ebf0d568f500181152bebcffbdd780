@@ -1,0 +1,35 @@
+package Events;
+
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
+
+public class Events implements Listener {
+	
+	
+	@SuppressWarnings({ "deprecation" })
+	@EventHandler(priority=EventPriority.HIGH)
+	public void onPlayerUse(PlayerInteractEvent event){
+	    Player p = event.getPlayer();
+	 
+	    if(p.getItemInHand().getType() == Material.ELYTRA){
+	    	p.addPotionEffect((PotionEffect) new PotionEffect(PotionEffectType.INVISIBILITY, 300, 1, true));
+
+			
+		}
+		
+		
+	}
+
+	@SuppressWarnings("unused")
+	private Object getServer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

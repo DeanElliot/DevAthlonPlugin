@@ -1,0 +1,12 @@
+package Events;
+
+import org.bukkit.event.Listener;
+import org.bukkit.plugin.Plugin;
+
+import MagicalItems.MagicalItems;
+
+public class EventsClass implements Listener {
+	
+	private Plugin plugin = MagicalItems.getPlugin(MagicalItems.class);
+
+}
